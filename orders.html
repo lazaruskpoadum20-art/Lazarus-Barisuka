@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Orders - SugarCrust Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <span>⏰ Fresh out of the oven daily from 7 AM</span>
+        <span>📞 Order Hotline: <strong>08100331521</strong></span>
+    </div>
+    <header>
+        <div class="logo">SugarCrust <span>Bakery</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="orders.html" class="active">Custom Orders</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" style="height: 30vh; background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://unsplash.com');">
+        <div class="hero-text"><h1>Design Your Cake</h1></div>
+    </section>
+    <section class="info-sections" style="margin-top: 20px;">
+        <div class="card" style="flex: 2;">
+            <h3>Cake Booking Request</h3>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Your Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <select required>
+                    <option value="">Select Cake Base Flavor</option>
+                    <option value="vanilla">Classic Vanilla Bean</option>
+                    <option value="chocolate">Deep Rich Chocolate</option>
+                    <option value="velvet">Red Velvet Cream Cheese</option>
+                </select>
+                <textarea rows="4" placeholder="Describe your design requests (Inscriptions, layers, colors)..." required></textarea>
+                <button type="submit" class="btn" style="border:none; cursor:pointer;">Submit Cake Request</button>
+            </form>
+        </div>
+        <div class="card">
+            <h3>Notice</h3>
+            <p>Please place all custom party or birthday cake configurations at least **48 hours in advance** so our bakers have time to prepare.</p>
+        </div>
+    </section>
+    <footer><p>&copy; 2026 The Sugar Crust Bakery. All Rights Reserved.</p></footer>
+</body>
+</html>

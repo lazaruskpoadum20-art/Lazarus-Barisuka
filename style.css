@@ -1,0 +1,191 @@
+/* Universal Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #4a3b32;
+    background-color: #fffbf7;
+}
+
+/* Announcement Top Bar */
+.top-bar {
+    background-color: #d4a373;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10%;
+    font-size: 13px;
+}
+
+/* Header & Navigation Styling */
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6f4e37;
+}
+
+.logo span {
+    color: #ffb5a7;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #6f4e37;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #ffb5a7;
+}
+
+/* Hero Section Styling */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('https://unsplash.com') no-repeat center center/cover;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+.btn {
+    background-color: #ffb5a7;
+    color: #6f4e37;
+    padding: 12px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(255, 181, 167, 0.4);
+    transition: background 0.3s;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #d4a373;
+    color: #fff;
+}
+
+/* Grid Layout Sections */
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    max-width: 1200px;
+    margin: -40px auto 40px auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.card {
+    background-color: #ffffff;
+    flex: 1;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-top: 4px solid #ffb5a7;
+}
+
+.card h3 {
+    color: #6f4e37;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #666;
+}
+
+/* Custom Order Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fffbf7;
+}
+
+/* Footer Section */
+footer {
+    background-color: #4a3b32;
+    color: #f5ebe0;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+    header, .info-sections {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        margin-top: 15px;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    .info-sections {
+        margin-top: 20px;
+    }
+    .card {
+        margin-bottom: 15px;
+    }
+    .hero-text h1 {
+        font-size: 30px;
+    }
+}
